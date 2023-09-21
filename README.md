@@ -1,3 +1,4 @@
+# Power BI Revenue Analytics for Hospitality
 # Overview
 This project provides in-depth insights into hotel sales data using Power BI. It covers key metrics such as RevPar (Revenue Per Available Room), Realization %, Occupancy %, Average Daily Rate (ADR), and more to evaluate the hotel's performance and identify trends.
 
