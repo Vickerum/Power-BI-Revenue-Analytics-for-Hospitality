@@ -1,19 +1,31 @@
-# Power-BI-Revenue-Analytics-for-Hospitality
-Developed and implemented a revenue insights project using Power BI for the hospitality industry
+# Overview
+This project provides in-depth insights into hotel sales data using Power BI. It covers key metrics such as RevPar (Revenue Per Available Room), Realization %, Occupancy %, Average Daily Rate (ADR), and more to evaluate the hotel's performance and identify trends.
 
-This project aims to provide revenue insights in the hospitality domain using Power BI. It analyzes key metrics such as RevPar, Average Daily Rate, and Daily Sellable Room Nights to uncover revenue trends and opportunities. 
-
-The project also covers No Show and Cancellation metrics (BRN, URN) for better understanding. Additionally, the distinction between weekdays and weekends in the hotel industry is explored.
-
-# Steps
-1] Data Loading and Transformation: The project involves loading the entire data folder and transforming the data using Power Query.
-
-2] Date Modifications: The project adjusts the weekend definition in the tables from Saturday-Sunday to Friday-Saturday.
-
-3] DAX Calculations: Calculated columns and measures using DAX are created to generate new columns like WeekNumber and Weekend.
-
-4] Revenue measure is calculated using the formula: Revenue = SUM(fact_bookings[revenue_realized])
-
-Other measures include total bookings, total capacity, and successful bookings.
-
-The purpose of this project is to provide valuable insights into revenue performance within the hospitality industry, leveraging Power BI's analytical capabilities.
+# Key Metrics
+RevPar (Revenue Per Available Room): The average revenue generated per available room. It assesses overall revenue performance.
+Realization %: Measures the hotel's success in turning available rooms into bookings.
+Occupancy %: Represents the percentage of occupied rooms during a specific period.
+Average Daily Rate (ADR): The average rate at which rooms are sold.
+Daily Sellable Room Nights: Calculated as the number of available rooms minus out-of-order rooms.
+Cancellation Rate: The percentage of canceled bookings out of total bookings.
+Approach
+# Data Filtering
+Key metrics can be filtered by cities, room class, and months to focus on specific data subsets.
+The super key metrics, RevPar, and Realization % are calculated based on occupancy and ADR.
+# Insights
+RevPar fluctuates while ADR remains stable, suggesting an opportunity for dynamic pricing.
+Correlation observed between ratings and occupancy, with lower ratings associated with higher cancellation rates.
+Focus on underperforming hotels, such as the Bangalore hotel, and analyze factors like location, type, ratings, and amenities for pricing strategies.
+Consider reading customer feedback for insights into service improvements.
+Evaluate pricing strategies, especially on peak days.
+Explore ways to encourage bookings through the hotel's own website to reduce commission costs.
+# Steps Taken
+Loaded and transformed data using Power Query.
+Adjusted dates to consider weekends as Friday-Saturday.
+Created DAX calculated columns for week numbers and weekends.
+Created measures for revenue, total bookings, total capacity, and successful bookings.
+# Visualizations
+Visualizations include charts for ADR and realization across different platforms.
+Insights gained from visualizations inform pricing strategies, occupancy rates, and customer feedback analysis.
+# Conclusion
+This project highlights the importance of analyzing key metrics in the hotel industry, including RevPar, Realization %, and ADR. By understanding these metrics, businesses can make data-driven decisions to improve revenue and customer satisfaction.
